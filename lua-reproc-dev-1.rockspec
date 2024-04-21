@@ -1,7 +1,8 @@
 package = "lua-reproc"
 version = "dev-1"
+rockspec_format = "3.0"
 source = {
-   url = "gitrec://github.com/Simon-L/lua-reproc",
+   url = "git://github.com/Simon-L/lua-reproc",
    branch = "main"
 }
 description = {
