@@ -1,7 +1,7 @@
 package = "lua-reproc"
 version = "dev-1"
 source = {
-   url = "git://github.com/Simon-L/lua-reproc",
+   url = "gitrec://github.com/Simon-L/lua-reproc",
    branch = "main"
 }
 description = {
