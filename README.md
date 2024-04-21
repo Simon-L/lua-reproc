@@ -2,6 +2,8 @@
 
 Basic FFI wrapper for [reproc](https://github.com/DaanDeMeyer/reproc)
 
+:warning: Only tested on Linux!
+
 `luarocks install https://github.com/Simon-L/lua-reproc/raw/main/lua-reproc-dev-1.rockspec`
 
 ## Usage
@@ -14,14 +16,15 @@ You may prefer to point it to libreproc.so at any other location: `local reproc 
 
 ## Example
 
-`reproc_read.lua` contains an example very closely reproducing the example of the same name in reproc repo.
+`reproc_read.lua` contains an example very closely reproducing the example of the same name in reproc repo.  
+`nonblocking_read.lua` shows how to do non blocking read on child processes stdout.  
 
 A basic usage of `reproc_run` is shown below:
 ```lua
 local ffi = require "ffi"
 local reproc = require "reproc"()
 
--- Table wit program and args, adding nil is necessary
+-- Table with program and args, adding nil is necessary
 local cmd = { "echo", "\"Hello World\"" }
 cmd[#cmd+1] = nil
 
